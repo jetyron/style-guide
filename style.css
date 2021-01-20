@@ -241,6 +241,10 @@ footer h2 {
         width: 95%;
     }
 
+    .color:hover {
+        width: 95%;
+    }
+
     footer {
         padding: 1em;
         font-size: 1rem;
