@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Oswald:wght@200;400;700&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+html{
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-weight: 600;
+    background-color: #f8f8ff;
+}
+
+header {
+    padding: 1em 2em;
+    text-align: left;
+    font-family: 'Nova Square', cursive;
+    background-image: linear-gradient(#333, #111);
+    color: #f8f8ff;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+header ul {
+    margin-top: 0.3em;
+}
+
+header li {
+    display: inline;
+    list-style: none;
+    margin-left: 1em;
+}
+
+header a {
+    color: #f8f8ff;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+header a:hover {
+    font-size: 1.45em;
+    color: #0ff;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-family:/* "Nova Square",*/ "Oswald";
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2em;
+    margin-top: 4em;
+}
+
+.container {
+    border: 3px solid #555;
+    width: 90%;
+    margin: 1em auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container div {
+    display: inline-block;
+}
+
+.color ul {
+    list-style: none;
+}
+
+.color {
+    width: 40%;
+    height: fit-content;
+    text-align: center;
+    line-height: 1.4;
+    margin: 2%;
+    padding: 1em;
+    border-radius: 10px;
+    font-family: "Quattrocento Sans";
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    transition: all .5s;
+}
+
+.color:hover {
+    width: 50%;
+    height: max-content;
+    line-height: 2;
+    letter-spacing: 4px;
+    transition: all .5s;
+    cursor: default;
+}
+
+.color ul,
+.color li {
+    transition: font-size .5s;
+}
+
+.color ul:hover,
+.color li:hover {
+    font-size: 1.75rem;
+}
+
+#purple {
+    background-color:#8712b3;
+    color: #f8f8ff;
+}
+
+#violet {
+    background-color: #bd0dff;
+}
+
+#lime {
+    background-color:#0f0;
+}
+
+#brick {
+    background-color: #b32912;
+    color: #f8f8ff;
+}
+
+#blood-orange {
+    background-color: #ff300d;
+}
+
+#ghost {
+    background-color: #f8f8ff;
+    border: 3px solid #ccc;    
+}
+
+.font {
+    width: 45%;
+    line-height: 1.4;
+    margin: 5% auto;
+    font-size: 1.5em;
+
+}
+
+.font h3 {
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+.font p {
+    transition: all 0.75s;
+}
+
+.font p:hover {
+    height: max-content;
+    font-size: 1.2em;
+    line-height: 2;
+    transition: all 0.75s;
+    cursor: default;
+}
+
+#nova {
+    font-family: "Nova Square";
+}
+
+#quattro {
+    font-family: "Quattrocento Sans";
+}
+
+#quattro p:nth-child(2) {
+    font-weight: 400;
+}
+
+#quattro p:nth-child(3) {
+    font-weight: 700;
+}
+
+#quattro p:nth-child(4) {
+    font-style: italic;
+}
+
+#oswald {
+    font-family: Oswald;
+}
+
+#oswald p:nth-child(2) {
+    font-weight: 200;
+}
+
+#oswald p:nth-child(3) {
+    font-weight: 400;
+}
+
+#oswald p:nth-child(4) {
+    font-weight: 800;
+}
+
+.style {
+    width: 30%;
+    padding: 2em;
+    font-family: "Quattrocento Sans";
+    text-align: left;
+    font-weight: 400;
+}
+
+.style span {
+    font-size: 1.5em;
+    font-weight: 800;
+    font-family: 'Oswald';
+}
+
+footer {
+    background-image: linear-gradient(#444, #111);
+    color: #f8f8ff;
+    padding: 3em 1em;
+    width: 100%;
+}
+
+footer h2 {
+    text-align: right;
+    margin-top: 0;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .style,
+    .color,
+    .font {
+        width: 95%;
+    }
+
+    footer {
+        padding: 1em;
+        font-size: 1rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        font-size: 1.5rem;
+    }
+
+    header {
+        padding: 0.5em;
+    }
+
+    header ul,
+    header li {
+        margin: 0;
+    }
+
+}
